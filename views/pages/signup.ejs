@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>signup</title>
+        <link rel="stylesheet" href="/stylesheets/login.css">
+    </head>
+    <body>
+        <form action="/register" method="POST">
+            <h2>signup</h2>
+            <div class="section">
+                <div class="title">Email</div>
+                <div class="field"><input type="text" id="email" name="email"></div>
+            </div>
+            <div class="section">
+                <div class="title">Password</div>
+                <div class="field"><input type="text" id="password" name="password"></div>
+            </div>
+            <div class="section">
+                <div class="title">Direccion</div>
+                <div class="field"><input type="text" id="direccion" name="direccion"></div>
+            </div>
+            <div class="section">
+                <div class="title">codigoPostal</div>
+                <div class="field"><input type="text" id="codigoPostal" name="codigoPostal"></div>
+            </div>
+            <div class="section">
+                <div class="title">Estado</div>
+                <div class="field"><input type="text" id="estado" name="estado"></div>
+            </div>
+            <div class="section">
+                <div class="title">Ciudad</div>
+                <div class="field"><input type="text" id="ciudad" name="ciudad"></div>
+            </div>
+            <div class="section">
+                <div class="button"><input type="submit" value="Registrarse"></div>
+                <div class="button"><a href="/login">ya tienes cuenta?</a></div>
+            </div>
+        </form>
+    </body>
+</html>

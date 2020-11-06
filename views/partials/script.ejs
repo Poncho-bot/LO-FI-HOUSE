@@ -1,0 +1,29 @@
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min
+.js"></script>
+<script src="./javascripts/menu.js"></script>
+<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+<script src="./javascripts/geo.js"></script>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>paypal.Buttons().render('body');</script>
+<script>
+  window.dmAsyncInit = function()
+  {
+    DM.init({ apiKey: 'your app id', status: true, cookie: true });
+  };
+  (function() {
+    var e = document.createElement('script');
+    e.async = true;
+    e.src = 'https://api.dmcdn.net/all.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+  }());
+</script>

@@ -1,0 +1,70 @@
+<!-- views/partials/navbar.ejs -->
+<link rel="stylesheet" href="/stylesheets/botones.css" />
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+    aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toogle" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    API's
+                </a>   
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/ubicacion">Donde nos localizamos</a>
+                    <a class="dropdown-item">Siguenos en twitter</a>
+                    <i class="fab fa-twitter"></i>
+                    <a class="twitter-follow-button"
+                         href="https://twitter.com/@alfonso65670345">
+                        Follow @LOFItheHOUSE</a>
+                    <div id="paypal-button-container"></div>
+
+                    <script
+                      src="https://www.paypal.com/sdk/js?client-id=AYg-qqFoAiMKixYIgvc_ZJHuOg4SFXsyVSNNhoASSWnaFLqFiE_hpwBOWb4Um1ByYm7LclDgBfIYLK6j&currency=MXN">
+                    </script>
+                     <script>
+                        paypal.buttons({
+                        createOrder: function(data, actions) {
+                          return actions.order.create({
+                            purchase_units: [{
+                              amount: {
+                                name: 'Disco mix #1',
+                                value: '120.00',
+                                currency_code: 'MXN'
+                              }
+                            }]
+                          });
+                        },
+                        onApprove: function(data, actions){
+                          return actions.order.capture().then(function(details){
+                            alert('Transaction completed by '+
+                            details.payer.name.given_name);
+                          });
+                        }
+                      }).render('#paypal-button-container');
+                      </script>
+                    <a class="dropdown-item" href="/streaming">Escucha la musica en directo</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/clima">ve si el clima es bueno</a>
+                </div>
+                
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/acercade">Acerca de</a>
+            </li>
+            
+        </ul>
+        <div class="button"><a href="/signup">Registrate</a></div>
+        <div class="button"><a href="/login">Inicia sesion</a></div>
+        </form>
+    </div>
+</nav>

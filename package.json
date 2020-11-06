@@ -1,0 +1,41 @@
+{
+  "name": "mysite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "forecastio": "^2.0.0",
+    "googleapis": "^63.0.0",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.5.1",
+    "mediaserver": "^0.1.1",
+    "mongoose": "^5.10.9",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poncho-bot/misitio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poncho-bot/misitio/issues"
+  },
+  "homepage": "https://github.com/Poncho-bot/misitio#readme",
+  "description": ""
+}

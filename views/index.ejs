@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <%- include('partials/head'); %>
+  <script type="text/javascript">
+    window.onload = function () {
+      L.mapquest.key = 'no67vdmWGqmpc0pUGnldI2P8sstFaexa';
+
+      var map = L.mapquest.map('map', {
+        center: [20.913903, -100.744012],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 12
+      });
+
+      map.addControl(L.mapquest.control());
+    }
+  </script>
+</head>
+
+<body>
+  <%- include('partials/navbar'); %>
+
+  <div class="jumbotron">
+    <h1 class="display-4">LO-FI-HOUSE</h1>
+    <p class="lead">Se acerca el frio y la mejor forma de acompañarlo es con musica que relaje a lado de la fogata</p>
+    <hr class="my-4">
+    <p>LO-FI-HOUSE</p>
+    <div id="contenido">
+    </div>
+    <img src="/images/imagen2.jpg" width="100%" height="500" />
+  </div>
+  <h1>Ayudanos donando para que traegamos mas musica</h1>
+  <%- include('partials/script'); %>
+  <foote>
+    <%- include('partials/footer'); %>
+ 
+  </foote>
+
+</body>
+
+</html>
